@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: configserver
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/configs
+  rabbitmq:
+    username: 'packt'
+    password: 'publishing'
+
+server.port: 8888
+
+management:
+  server:
+    port: 11111
+
+
